@@ -1,14 +1,15 @@
 
 import './App.css';
 import Nav from './component.js/Nav';
-import Counter from './Counter';
+import TextForm from './component.js/TextForm';
 
 function App() {
   return (
     <>
-    <Counter/>
-  
-{/* <Nav titel="MyNav" aboutUS="AboutUs"/> */}
+<Nav titel="MyNav" aboutUS="AboutUs"/>
+<div className="container my-3">
+<TextForm heading="Enter Your text"/>
+</div>
     </>
   );
 }
