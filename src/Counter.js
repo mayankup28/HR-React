@@ -6,8 +6,8 @@ function Counter() {
     return (
     <>
     <h1>Count is {count}</h1>
-    <button   onClick={()=>setcount(pre=>pre+1)}>Increament</button>
-    <button  disabled={count===0} onClick={()=>setcount(pre=>pre-1)}>Decrement</button>
+    <button onClick={()=>setcount(pre=>pre+1)}>Increament</button>
+    <button disabled={count===0} onClick={()=>setcount(pre=>pre-1)}>Decrement</button>
     </>
     )
 }
