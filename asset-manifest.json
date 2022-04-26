@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HR-React/static/css/main.b804db36.css",
+    "main.js": "/HR-React/static/js/main.53075be9.js",
+    "static/js/787.5c42fc63.chunk.js": "/HR-React/static/js/787.5c42fc63.chunk.js",
+    "index.html": "/HR-React/index.html",
+    "main.b804db36.css.map": "/HR-React/static/css/main.b804db36.css.map",
+    "main.53075be9.js.map": "/HR-React/static/js/main.53075be9.js.map",
+    "787.5c42fc63.chunk.js.map": "/HR-React/static/js/787.5c42fc63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b804db36.css",
+    "static/js/main.53075be9.js"
+  ]
+}
