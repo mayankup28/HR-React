@@ -1,10 +1,10 @@
-
 import { useState } from 'react';
 import './App.css';
 import Alert from './component.js/Alert';
-// import About from './component.js/About';
+import About from './component.js/About';
 import Nav from './component.js/Nav';
 import TextForm from './component.js/TextForm';
+import { Routes,Route } from 'react-router-dom';
 
 function App() {
   const[mode,setmode]=useState("light")
@@ -54,7 +54,11 @@ function App() {
 <Nav titel="MyNav" aboutUS="AboutUs" mode={mode} toggleMode={togglemode}  words={word}/>
 <Alert alert={alt}/>
 <div className="container my-3">
-<TextForm heading="Enter Your text" Showalert={Galert} mode={mode}/>
+        <Routes>
+        <Route path="/" element = {<TextForm heading="Enter Your text" Showalert={Galert} mode={mode}/>} ></Route>
+        <Route path="/about" element = {<About/>} ></Route>
+        <Route path="/home" element={<TextForm heading="Enter Your text" Showalert={Galert} mode={mode}/>}></Route>
+      </Routes>
 {/* <About/> */}
 </div>
     </>
