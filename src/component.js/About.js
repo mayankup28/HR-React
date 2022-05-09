@@ -1,28 +1,33 @@
 import React, { useState } from 'react'
 
-function About() {
-    const[myStyle,setStyle]=useState({
-        color:"black",
-        backgroundColor:"white"
-    })
-    const[btnText,setbtnText]=useState("Enable Dark Mode")
-    const ChangeStyle=()=>{
-        if(myStyle.color==="black"){
-            setStyle({
-                color:"white",
-                backgroundColor:"black",
-                border:"1px solid white"
-            })
-            setbtnText("Enable Light Mode")
-        }
-        else{
-            setStyle({
-                color:"black",
-                backgroundColor:"white"
-            })
-            setbtnText("Enable Dark Mode")
-        }
+function About(props) {
+    let myStyle={
+        color:props.mode==='dark'?'white':'#042743' ,
+        backgroundColor:props.mode==='dark'?'rgb(36 74 104)':'white' ,
     }
+    // const[myStyle,setStyle]=useState({
+    //     color:"black",
+    //     backgroundColor:"white"
+    // })
+
+    // const[btnText,setbtnText]=useState("Enable Dark Mode")
+    // const ChangeStyle=()=>{
+    //     if(myStyle.color==="black"){
+    //         setStyle({
+    //             color:"white",
+    //             backgroundColor:"black",
+    //             border:"1px solid white"
+    //         })
+    //         setbtnText("Enable Light Mode")
+    //     }
+    //     else{
+    //         setStyle({
+    //             color:"black",
+    //             backgroundColor:"white"
+    //         })
+    //         setbtnText("Enable Dark Mode")
+    //     }
+    // }
     return (
     <div className='container' style={myStyle}>
         <h2 className='my-3'>About Us</h2>
@@ -64,9 +69,9 @@ function About() {
     </div>
     </div>
 </div>
-<div className="container my-2">
+{/* <div className="container my-2">
 <button type="button" onClick={ChangeStyle} className="btn btn-primary">{btnText}</button>
-</div>
+</div> */}
     </div>
     )
 }
